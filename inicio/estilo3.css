@@ -61,14 +61,6 @@ h1{
 }
 
 .info h3,
-.info p {
-    color: #222;
-    margin-bottom: 15px;
-}
-
-.precio p:first-child {
-    text-decoration: line-through;
-}
 
 .precio {
     display: flex;
