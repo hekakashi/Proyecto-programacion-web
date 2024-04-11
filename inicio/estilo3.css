@@ -35,7 +35,8 @@ h1{
     justify-content: center;
     margin: auto;
     gap: 20px;
-    grid-template-columns: repeat(3,280px);
+    grid-template-columns: repeat(auto-fit(280px,280px));
+    padding-bottom: 50px;
 }
 
 .items {
@@ -70,4 +71,23 @@ h1{
 
 .precio p {
     font-size: 1.8rem;
+}
+
+.info button {
+    padding: 1rem;
+    width: 100%;
+    background-color: rgb(162, 202, 223);
+    border: none;
+    outline: none;
+    color: #ffff;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.info button:hover {
+    background-color: #2da0c3;
+    transition: all .3s;
 }

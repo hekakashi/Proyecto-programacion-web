@@ -3,8 +3,6 @@ margin: 0%;
 padding: 0%;
 font-family: vicente;
 background-color: rgb(162, 202, 223);
-
-
 }
 
 .Formulario{
@@ -14,20 +12,11 @@ background-color: rgb(162, 202, 223);
     transform: translate(-50%, -50%);
     width: 350px;
     height: 575px;
-
-
-
 }
-
-
 
 .Formulario input{
     position: relative;
     width: 280px;
-
-
-
-
 }
 .Formulario h1{
     text-align: left;
