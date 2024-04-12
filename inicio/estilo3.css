@@ -16,6 +16,8 @@ html {
 
 .container nav {
     width: 100%;
+    display: flex;
+    justify-content: flex-end;
     padding: 15px;
     background-color: #fff;
     margin-bottom: 30px;
