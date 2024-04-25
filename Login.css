@@ -9,9 +9,9 @@ background-color: rgb(162, 202, 223);
     position: absolute;
     top: 50%;
     left: 57%;
-    transform: translate(-50%, -50%);
-    width: 350px;
-    height: 670px;
+    transform: translate(-55%, -50%);
+    width: 380px;
+    height: 700px;
     
 }
 
@@ -30,10 +30,12 @@ background-color: rgb(162, 202, 223);
     text-transform: uppercase;
     cursor: pointer;
     border-radius: 3px;
+
     
 }
 .Formulario h1{
     text-align: left;
+    
 }
 
 .Formulario a{
@@ -45,9 +47,10 @@ background-color: rgb(162, 202, 223);
     color: rgb(162, 202, 223);
     padding: 8px 8px;
    text-align: center;
-    width: 280px;
+    width: 300px;
     border-color: black;
     border-radius: 30px;
+
     
 
 
@@ -57,6 +60,10 @@ background-color: rgb(162, 202, 223);
 
 
 }
+
+
+
+
 
 
 
