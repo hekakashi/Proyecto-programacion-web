@@ -12,25 +12,25 @@
                 integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
                 crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="Login.css">
-        <script src="script.js"></script>
+       
 </head>
 
 <body>
         <header>
-                <div class="Formulario">
+                <div class="Formulario" id="Formulario">
 
 
 
-                        <form method="post" id="formdatos">
+                        <form method="post" id="form">
 
 
 
 
-                                <div class="imag1">
+                                <div class="imag1" id="imag1">
                                         <img src="IMGLOGIN/luccian.png" alt="" width="280" height="220" id="immag">
                                         <br>
                                         <br>
-                                        <div class="title">
+                                        <div class="title" id="title">
                                                 <h1 id="titulo">Inicio de sesión</h1>
                                         </div>
 
@@ -39,15 +39,16 @@
                                 <br>
 
 
-                                <div class="Email">
+                                <div class="Email" id="Email">
+                                        
+                                        <input type="email" id="email" class="form-control" name="Correo">
                                         <i class="fa-solid fa-envelope"></i>
-                                        <input type="email" id="emailinput" class="form-control" required>
                                         <label for="Email">Correo electronico</label>
                                 </div>
                                 <br>
-                                <div class="password">
+                                <div class="password" id="password">
+                                        <input type="password" id="Password" class="form-control" name="Contraseña">
                                         <i class="fa-solid fa-lock"></i>
-                                        <input type="password" id="contrainput" class="form-control" required>
                                         <label for="Password">Contraseña</label>
 
 
@@ -55,16 +56,16 @@
                                 </div>
                                 <br>
 
-                                <div class="btn-field">
+                                <div class="btn-field" id="btn-field">
                                         <button type="submit" class="button">Iniciar</button>
 
                                 </div>
 
 
 
-                                <div class="Registrarse">
+                                <div class="Registrarse" id="Registrarse">
                                         <br>
-                                        Quiere registrarse?<a href="Registro.html" id="link">Registrese aquí!</a>
+                                        Quiere registrarse?<a href="Registro.html" id="Registro">Registrese aquí!</a>
                                 </div>
                         </form>
                 </div>
@@ -79,6 +80,8 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
                 integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
                 crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>
