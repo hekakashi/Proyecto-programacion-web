@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const formulario = document.getElementById('formulario');
-    const mensajeError = document.getElementById('mensajeError');
+    const mensaje= document.getElementById('mensajeError');
+    
 
     formulario.addEventListener('submit', function (evento) {
         evento.preventDefault(); 
@@ -9,8 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Validación de los campos
 
-        if (email.trim() === '') {
-            mensajeError.innerText = 'El campo email no puede estar vacío.';
+        if (email.value.trim() === '') {
+            mensajeError.innerText = 'El formato del email no es válido.';
             return;
         }
 
@@ -19,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        if(Password.length < 8){
+        if(Password.value.length < 8){
             mensajeError.innerText = 'Contraseña no valida(Minimo 8 caracteres).';
             return;
         }
@@ -35,5 +36,16 @@ document.addEventListener("DOMContentLoaded", function () {
         const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return re.test(String(email).toLowerCase());
     }
+});
+
+//EVENTO
+document.addEventListener("click", (e)=>{
+    if(e.target === submit){
+        e.preventDefault();
+        console.log('Bienvenido gente')
+    }
+
+
+
 });
 
