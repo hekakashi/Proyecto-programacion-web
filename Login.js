@@ -1,35 +1,43 @@
 document.addEventListener("DOMContentLoaded", function () {
     const formulario = document.getElementById('formulario');
-    const mensaje= document.getElementById('mensajeError');
+    const mensajeError = document.getElementById('mensajeError');
     
 
     formulario.addEventListener('submit', function (evento) {
-        evento.preventDefault(); 
+        evento.preventDefault(); // Previene el envío del formulario para poder validarlo con Javascript
         let email = document.getElementById('email').value;
-        let Password = document.getElementById('Password').value;
+        let contra = document.getElementById('contra').value;
+        let entrar
+       
 
         // Validación de los campos
 
-        if (email.value.trim() === '') {
-            mensajeError.innerText = 'El formato del email no es válido.';
+        if (email.trim() === '') {
+            mensajeError.innerText = 'El campo email no puede estar vacío.';
+            entrar = true
             return;
         }
 
         if (!validarEmail(email)) {
             mensajeError.innerText = 'El formato del email no es válido.';
+            entrar = true
             return;
         }
 
-        if(Password.value.length < 8){
-            mensajeError.innerText = 'Contraseña no valida(Minimo 8 caracteres).';
+        if (contra.length < 8) {
+            mensajeError.innerText = 'Contraseña invalida(Minimo 8 caracteres)';
+            entrar = true
             return;
         }
+        
+        
 
+        
 
         // Si todo está correcto, se puede proceder a enviar el formulario o hacer alguna otra acción
         mensajeError.innerText = '';
         // alert('Formulario enviado con éxito!');
-        formulario.submit(); 
+        formulario.submit();
     });
 
     function validarEmail(email) {
@@ -37,15 +45,3 @@ document.addEventListener("DOMContentLoaded", function () {
         return re.test(String(email).toLowerCase());
     }
 });
-
-//EVENTO
-document.addEventListener("click", (e)=>{
-    if(e.target === submit){
-        e.preventDefault();
-        console.log('Bienvenido gente')
-    }
-
-
-
-});
-

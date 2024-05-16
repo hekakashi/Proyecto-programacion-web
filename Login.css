@@ -7,11 +7,11 @@ background-color: rgb(162, 202, 223);
 
 .Formulario{
     position: absolute;
-    top: 53%;
+    top: 60%;
     left: 57%;
     transform: translate(-55%, -50%);
     width: 380px;
-    height: 700px;
+    height: 800px;
     
 }
 
@@ -45,7 +45,6 @@ background-color: rgb(162, 202, 223);
 .Formulario a{
     display: block;
     font-weight: 700;
-    border-radius: 10px;
     background-color: #fff;
     color: rgb(162, 202, 223);
     padding: 6px 5px;
@@ -81,6 +80,22 @@ background-color: rgb(162, 202, 223);
     font-weight: 700;
     
 }
+
+p{
+    background-color: #fff;
+    width: 285px;
+    border-radius: 40px;
+    
+
+    
+    
+}
+
+
+
+
+
+
 
 
 
