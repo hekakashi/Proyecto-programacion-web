@@ -9,28 +9,28 @@
   <body>
     <section class="container">
       <header>Registro</header>
-      <form action="#" class="form">
+      <form class="form" id="form" method="post" novalidate>
         <div class="input-box">
           <label>Nombre completo</label>
-          <input type="text" placeholder="" required id="nomcompleto" />
+          <input type="text" placeholder="Nombre completo"  id="nomcompleto" />
         </div>
 
         <div class="input-box">
           <label>Correo electronico</label>
-          <input type="text" placeholder="" required id="correo"/>
+          <input type="text" placeholder="Correo electronico" id="email"/>
         </div>
 
         <div class="column">
           <div class="input-box">
-            <label>Numero de telefono</label>
-            <input type="number" placeholder="" required id="telefono"/>
+            <label>Numero de teléfono</label>
+            <input type="tel" placeholder="944332288" id="telefono"/>
           </div>
           <div class="input-box">
             <label>Fecha de nacimiento</label>
-            <input type="date" placeholder="Enter birth date" required  id="date"/>
+            <input type="date" placeholder="Enter birth date"  id="date"/>
           </div>
         </div>
-        <div class="gender-box">
+        <div class="gender-box" id="genero">
           <h3>Genero</h3>
           <div class="gender-option">
             <div class="gender">
@@ -49,11 +49,11 @@
         </div>
         <div class="input-box address">
           <label>Direccion</label>
-          <input type="text" placeholder="Dirección" required id="direccion"/>
+          <input type="text" placeholder="Dirección" id="direccion"/>
           
           <div class="column">
             <div class="select-box">
-              <select>
+              <select class="region" id="region">
                 <option hidden>Región</option>
                 <option>Región metropolitana</option>
                 <option>Bio bio</option>
@@ -64,21 +64,26 @@
                 <option>Ñuble</option>
               </select>
             </div>
-            <input type="text" placeholder="comuna" required  id="comuna"/>
+            <input type="text" placeholder="Comuna" id="comuna"/>
           </div>
+          <br>
           <div class="column">
            </div>
            <div class="input-password">
-            <label>Contraseña nueva</label>
-            <input type="password" placeholder="" required id="password1" />
+            <label>Contraseña</label>
+            <input type="password" placeholder="Contraseña" id="password1" />
           </div>
+          <br>
           <div class="input-confirmpassword">
             <label>Confirmar contraseña</label>
-            <input type="password" placeholder="" required id="password2" />
+            <input type="password" placeholder="Confirmar contraseña" id="password2" />
           </div>
         </div>
-        <button>Registrarse</button>
+        <button class="registro" id="registro">Registrarse</button>
+        <br>
+        <p id="mensajeError"></p>
       </form>
     </section>
+    <script src="Registro.js"></script>
   </body>
 </html>

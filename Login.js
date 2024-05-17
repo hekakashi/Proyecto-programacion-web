@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
         evento.preventDefault(); // Previene el envío del formulario para poder validarlo con Javascript
         let email = document.getElementById('email').value;
         let contra = document.getElementById('contra').value;
-        let entrar
+        let entrar = "";
        
 
         // Validación de los campos
@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
             entrar = true
             return;
         }
+
         
         
 
