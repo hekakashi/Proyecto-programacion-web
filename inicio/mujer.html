@@ -1,127 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo3.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-    crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="estilo3.css">
-    <title>Luccian Sanntes-Mujer</title>
+    <script src="carrito.js" async></script>
+    <title>Mujer</title>
 </head>
-
 <body>
-    <div class="container">
-        <nav>
-            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="imag/carro-de-la-carretilla.png" width="40"></button>
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-  <div class="offcanvas-header">
-    <h1 class="offcanvas-title" id="offcanvasRightLabel">Carrito de compras</h1>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <img src="imag/carro-de-la-carretilla.png" width="60">
-    <h5>Tu carrito está vacio</h5>
-    <button>Ir a comprar </button>
-  </div>
-</div>
-        </nav>
-        <h1>Mujer</h1>
-        <div class="grid">
-            <div class="items">
-                <img src="imag/air force helen.png">
-                <div class="info">
-                    <h3>Dunk retro Mid</h3>
-                    <div class="precio">
-                        <p>99.990</p>
-                    </div>
-                    <button>Agregar al carrito</button>
-                </div>
-            </div>
-            
-            <div class="items">
-                <img src="imag/airforcemuejr.png">
-                <div class="info">
-                    <h3>Zapatillas Nike Mujer Dunk Low Twist 'Sanddrift'
-                    </h3>
-                    <div class="precio">
-                        <p>$120.990</p>
-                    </div>
-                    <button>Agregar al carrito</button>
-                </div>
-            </div>
-            <div class="items">
-                <img src="imag/adidad m.jpg">
-                <div class="info">
-                    <h3>Gazelle Indoor Zapatillas adidas Unisex Rosado/Negro</h3>
-                    <div class="precio">
-                        <p>$105.990</p>
-                    </div>
-                    <button>Agregar al carrito</button>
-                </div>
-            </div>
-            <div  class="items">
-                <img src="imag/puma muher.jpg">
-                <div class="info">
-                    <h3>Palermo Zapatillas Puma Unisex Gris/Celeste
-                    </h3>
-                    <div class="precio">
-                        <p>$55.990</p>
-                    </div>
-                    <button>Agregar al carrito</button>
-                </div>
-            </div>
-            <div class="items">
-                <img src="imag/puma muher.jpg">
-                <div class="info">
-                    <h3>Samba OG Zapatillas adidas Mujer Blanco/Rojo</h3>
-                    <div class="precio">
-                        <p>$85.990</p>
-                    </div>
-                    <button>Agregar al carrito</button>
-                </div>
-            </div>
-            <div class="items">
-                <img src="imag/tillaaaas.jpg">
-                <div class="info">
-                    <h3>Dunk Low Se Zapatillas Nike Mujer Beige/Blanco
-                    </h3>
-                    <div class="precio">
-                        <p>$104.990</p>
-                    </div>
-                    <button>Agregar al carrito</button>
-                </div>
-            </div>
-            <div class="items">
-                <img src="imag/pene.jpg">
-                <div class="info">
-                    <h3>Campus 00S Zapatillas adidas Unisex Verde/Beige
 
-                    </h3>
-                    <div class="precio">
-                        <p>$89.990</p>
-                    </div>
-                    <button>Agregar al carrito</button>
-                </div>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand"><img src="imag/usuario-de-perfil.png" alt="" width="40"> 
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-info" type="submit">Buscar</button>
+          </form>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./pagina inicial.html">Marcas</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./hombre.html">Hombre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./mujer.html">Mujer</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <section class="contenedor">
+        <!-- Contenedor de elementos -->
+        <div class="contenedor-items">
+            <div class="item">
+                <span class="titulo-item">dunk retro low-mujer</span>
+                <img src="imag/air force helen.png" alt="" class="img-item">
+                <span class="precio-item">$69.990</span>
+                <button class="boton-item">Agregar al Carrito</button>
             </div>
-            <div class="items">
-                <img src="imag/pichula.jpg">
-                <div class="info">
-                    <h3>Campus 00S Zapatillas adidas Unisex Gris/Verde
-                    </h3>
-                    <div class="precio">
-                        <p>$111.990</p>
-                    </div>
-                    <button>Agregar al carrito</button>
-                </div>
+            <div class="item">
+                <span class="titulo-item">Air 1 Mid Zapatillas Jordan Hombre Amarillo/Negro</span>
+                <img src="imag/puma muher.jpg" alt="" class="img-item">
+                <span class="precio-item">$120.990</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Air More Uptempo 96 Zapatillas Nike Hombre Negro/Blanco</span>
+                <img src="imag/converse.png" alt="" class="img-item">
+                <span class="precio-item">$105.990</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">MB.03 Zapatillas Puma Hombre x LaMelo Ball Negro/Azul/span>
+                <img src="imag/samba muner.jpg" alt="" class="img-item">
+                <span class="precio-item">$149.990</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Zapatillas Puma Karmen Rebelle Mujer Beige</span>
+                <img src="imag/p-39510001-1_grande.webp" alt="" class="img-item">
+                <span class="precio-item">$64.990</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Zapatilla Vans Old Skool Stackform Mujer Negro</span>
+                <img src="imag/p-39233802-1_puma hlen.webp" alt="" class="img-item">
+                <span class="precio-item">$126.990</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Zapatilla Vans Old Skool Stackform Mujer Negro</span>
+                <img src="imag/p-VN0A7Q5M6BT-3_gvans muejr+.webp" alt="" class="img-item">
+                <span class="precio-item">$126.990</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">adidas</span>
+                <img src="imag/adidad m.jpg" alt="" class="img-item">
+                <span class="precio-item">$132.990</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">converse de bts-mujer</span>
+                <img src="imag/bts-mujer.jpg" alt="" class="img-item">
+                <span class="precio-item">$130.990</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">W AIR FORCE 1 '07 NN SE</span>
+                <img src="imag/1017474-1200-1200.webp" alt="" class="img-item">
+                <span class="precio-item">$142.890</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Zapatilla Vans Knu Stack Plataforma Mujer Negro
+                    Vans</span>
+                <img src="imag/p-VN000CP66BT-5_vanms.jpg" alt="" class="img-item">
+                <span class="precio-item">$190.890</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">W-AF1-SHADOW>
+                <img src="imag/1017356-1200-1200.webp" alt="" class="img-item">
+                <span class="precio-item">$152.990</span>
+                <button class="boton-item">Agregar al Carrito</button>
             </div>
         </div>
-    </div>
-</body>
+        <!-- Carrito de Compras -->
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2>Tu Carrito</h2>
+            </div>
 
+            <div class="carrito-items">
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu Total</strong>
+                    <span class="carrito-precio-total">
+                        $120.000
+                    </span>
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+            </div>
+        </div>
+    </section>
+</body>
 </html>
