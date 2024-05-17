@@ -7,8 +7,8 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-body {
-    background: #ecececdb;
+.container-fluid{
+    background-color: #205c20;
 }
 
 .card-list {
@@ -21,7 +21,7 @@ body {
 }
 
 .card-list .card-item {
-    background: #fff;
+    background: #ffffff;
     padding: 26px;
     border-radius: 8px;
     box-shadow: 0px 5px 10px rgba(126, 25, 25, 0.04);
