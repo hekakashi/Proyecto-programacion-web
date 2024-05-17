@@ -7,10 +7,6 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-.container-fluid{
-    background-color: #205c20;
-}
-
 .card-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
