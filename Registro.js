@@ -14,9 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
         let email = document.getElementById('email').value;
         let telefono = document.getElementById('telefono').value;
         let date = document.getElementById('date').value;
-        let region = document.getElementById('region').value;
-        let direccion = document.getElementById('direccion').value;
-        let comuna = document.getElementById('comuna').value;
         let password1 = document.getElementById('password1').value;
         let password2 = document.getElementById('password2').value;
         let genero = document.getElementById('genero').checked;
@@ -54,21 +51,6 @@ document.addEventListener("DOMContentLoaded", function () {
         
         if (date.trim() === '') {
             mensajeError.innerText = 'El campo email no puede estar vacío.';
-            return;
-        }
-
-       
-        if (direccion.trim() === '') {
-            mensajeError.innerText = 'El campo dirección no puede estar vacío.';
-            return;
-        }
-        
-        if (region === '') {
-            mensajeError.innerText = 'Debes seleccionar una región.';
-            return;
-        }
-        if (comuna.trim() === '') {
-            mensajeError.innerText = 'El campo comuna no puede estar vacío.';
             return;
         }
 
