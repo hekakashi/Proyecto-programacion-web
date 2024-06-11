@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="pene.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div id="product-carousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imag/bts-mujer.jpg"d-block w-100 product-image" alt="Nike Air Force 1">
+                        </div>
+                        <!-- Add more carousel items if needed -->
+                    </div>
+                    <a class="carousel-control-prev" href="#product-carousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#product-carousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2>Air Force 1 Le Zapatillas Nike Junior Blanco</h2>
+                <p>ID: NIFV5951111</p>
+                <p><strong>$102.990</strong></p>
+                <p class="product-description">
+                    Las zapatillas Nike Air Force 1 Le presentan un diseño duradero y su patrón adherente es perfecto para las aventuras de los más peques en el recreo. Es algo asombroso recién sacado de la caja, pero sigue manteniendo el estilo de siempre hasta cuando está cubierto de rasguños. De hecho, puede que con el uso se vea todavía mejor.
+                </p>
+                <h5>Elige tu talla:</h5>
+                <div class="size-buttons">
+                    <button class="btn btn-outline-primary">US 3.5 (GS)</button>
+                    <button class="btn btn-outline-primary">US 4 (GS)</button>
+                    <button class="btn btn-outline-primary">US 4.5 (GS)</button>
+                    <button class="btn btn-outline-primary">US 5 (GS)</button>
+                    <button class="btn btn-outline-primary">US 5.5 (GS)</button>
+                    <button class="btn btn-outline-primary">US 6 (GS)</button>
+                    <button class="btn btn-outline-primary">US 6.5 (GS)</button>
+                    <button class="btn btn-outline-primary">US 7 (GS)</button>
+                </div>
+                <a href="#" class="d-block mt-3" data-toggle="modal" data-target="#sizeGuideModal">Guia de Tallas</a>
+                <div class="social-share mt-3">
+                    <a href="#" class="btn btn-outline-secondary">Share</a>
+                    <a href="#" class="btn btn-outline-secondary">Tweet</a>
+                    <a href="#" class="btn btn-outline-secondary">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Size Guide Modal -->
+    <div class="modal fade" id="sizeGuideModal" tabindex="-1" aria-labelledby="sizeGuideModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="sizeGuideModalLabel">Guia de Tallas</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h6>Zapatilla Bebé (TD)</h6>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Centímetros</th>
+                                <th>US</th>
+                                <th>Chile</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>8</td><td>2C</td><td>16</td></tr>
+                            <tr><td>9</td><td>3C</td><td>17.5</td></tr>
+                            <tr><td>10</td><td>4C</td><td>18.5</td></tr>
+                            <tr><td>11</td><td>5C</td><td>20</td></tr>
+                            <tr><td>12</td><td>6C</td><td>21</td></tr>
+                            <tr><td>13</td><td>7C</td><td>22.5</td></tr>
+                            <tr><td>14</td><td>8C</td><td>24</td></tr>
+                            <tr><td>15</td><td>9C</td><td>25</td></tr>
+                            <tr><td>16</td><td>10C</td><td>26</td></tr>
+                        </tbody>
+                    </table>
+                    <h6>Zapatilla Niño (PS)</h6>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Centímetros</th>
+                                <th>US</th>
+                                <th>Chile</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>17</td><td>11C</td><td>27</td></tr>
+                            <tr><td>18</td><td>12C</td><td>28.5</td></tr>
+                            <tr><td>19</td><td>13C</td><td>30</td></tr>
+                            <tr><td>20</td><td>1Y</td><td>31</td></tr>
+                            <tr><td>20.5</td><td>1.5Y</td><td>32</td></tr>
+                            <tr><td>21</td><td>2Y</td><td>32.5</td></tr>
+                            <tr><td>21.5</td><td>2.5Y</td><td>33</td></tr>
+                            <tr><td>22</td><td>3Y</td><td>34</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
