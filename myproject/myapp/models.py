@@ -21,8 +21,8 @@ class Usuario(models.Model):
     )
     telefono = models.CharField(max_length=12)
     edad = models.IntegerField()
-    email = models.EmailField(unique=True, max_length=100, blank=True, null=True)
-    direccion = models.CharField(max_length=50, blank=True, null=True)
+    email = models.EmailField(unique=True, max_length=100, blank=False, null=True)
+    direccion = models.CharField(max_length=50, blank=False, null=True)
     activo = models.BooleanField()
 
     def __str__(self):
