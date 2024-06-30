@@ -9,6 +9,10 @@ def carrito(request):
    context = {}
    return render (request, 'pages/carrito.html', context)
 
+def carrusel(request):
+   context = {}
+   return render(request, 'pages/carrusel', context)
+
 def hombre(request):
    context = {}
    return render (request, 'pages/hombre.html' ,context )
@@ -24,3 +28,4 @@ def mujer(request):
 def registro(request):
    context = {}
    return render(request, 'pages/registro', context)
+
