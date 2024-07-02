@@ -102,12 +102,12 @@
     }
 }
 
-
-.atencioncliente{
+.atencioncliente footer{
     text-align: center;
     position: absolute;
     left: 16%;
     top: 88%;
+    border: 1px solid black;
 }
 
 .Redes{
@@ -141,5 +141,5 @@
 }
 
 .derechos{
-    background-color: rgb(162, 202, 223);
+    background-color:rgb(172, 204, 219);
 }
