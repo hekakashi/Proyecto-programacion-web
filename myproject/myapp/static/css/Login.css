@@ -11,16 +11,9 @@ background-color: rgb(162, 202, 223);
     left: 57%;
     transform: translate(-55%, -50%);
     width: 380px;
-    height: 800px;
-    
+    height: 800px;   
 }
 
-.Formulario img{
-
-    border: 1px solid;
-    border-radius: 40px;
-    
-}
 
 .Formulario input{
     position: relative;
@@ -30,17 +23,12 @@ background-color: rgb(162, 202, 223);
     text-transform: uppercase;
     cursor: pointer;
     border-radius: 3px;
-
-    
 }
+
 .Formulario h1{
     text-align: left;
     justify-content: center;
-    
-    
-    
 }
-
 
 .Formulario a{
     display: block;
@@ -51,22 +39,11 @@ background-color: rgb(162, 202, 223);
     text-align: center;
     width: 285px;
     border-radius: 30px;
-
-    
-
-
-
-
-
-
-
 }
 
 .btn-field{
     width: 100%;
     display: flex;
-
-
 }
 
 .btn-field button{
@@ -78,17 +55,12 @@ background-color: rgb(162, 202, 223);
     border-radius: 30px;
     cursor: pointer;
     font-weight: 700;
-    
 }
 
 p{
     background-color: #fff;
     width: 285px;
-    border-radius: 40px;
-    
-
-    
-    
+    border-radius: 40px; 
 }
 
 
