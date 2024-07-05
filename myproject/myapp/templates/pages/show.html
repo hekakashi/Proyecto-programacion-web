@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Records</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Usuario ID</th>
+                <th>Usuario Name</th>
+                <th>Usuario Email</th>
+                <th>Usuario Contact</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for usuario in usuarios %}
+            <tr>
+                <td>{{usuario.uid}}</td>
+                <td>{{usuario.uname}}</td>
+                <td>{{usuario.email}}</td>
+                <td>{{usuario.ucontact}}</td>
+                <td>
+                    <a href="/edit/{{usuario.uid}}">Edit</a>
+                    <a href="/delete/{{usuario.uid}}">Delete</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <button><a href="/usr">Add New Record</a></button>
+</body>
+</html>

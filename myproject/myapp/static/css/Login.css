@@ -14,6 +14,10 @@ background-color: rgb(162, 202, 223);
     height: 800px;   
 }
 
+.Formulario img{
+    border: 1px solid;
+    border-radius: 40px;
+}
 
 .Formulario input{
     position: relative;

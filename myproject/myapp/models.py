@@ -1,6 +1,5 @@
 from django.db import models
 
-
 # Create your models here.
 class Genero(models.Model):
     id_genero = models.AutoField(db_column="idGenero", primary_key=True)
@@ -33,3 +32,14 @@ class Usuario(models.Model):
             + " "
             + str(self.apellido_materno)
         )
+    
+    uid = models.CharField(max_length=20)
+    uname = models.CharField(max_length=100)
+    email = models.EmailField()
+    ucontact = models.CharField(max_length=15)
+
+    def str(self):
+        return "%s" %(self.uname)
+
+    class Meta:
+        db_table="usuario"
