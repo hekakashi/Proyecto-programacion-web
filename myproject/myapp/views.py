@@ -13,7 +13,7 @@ def carrito(request):
 
 def carrusel(request):
    context = {}
-   return render(request, 'pages/carrusel.html', context)
+   return render(request, 'pages/carrusel', context)
 
 def hombre(request):
    context = {}
@@ -21,15 +21,15 @@ def hombre(request):
 
 def login(request):
    context = {}
-   return render (request, 'pages/login.html', context)
+   return render (request, 'pages/login', context)
 
 def mujer(request):
    context = {}
-   return render (request, 'pages/mujer.html', context)
+   return render (request, 'pages/mujer', context)
 
 def registro(request):
    context = {}
-   return render(request, 'pages/registro.html', context)
+   return render(request, 'pages/registro', context)
 
 def usr(request):
     if request.method=="POST":
